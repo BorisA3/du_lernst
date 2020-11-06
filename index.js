@@ -1,5 +1,5 @@
 // Importar los módulos requeridos para el funcionamiento del servidor
-//Comentario sin sentido solo para probar que cualquiera puede subir
+//Comentario sin sentido solo para probar que cualquiera puede subir,,, pues no se pudo
 const mongoose = require("mongoose");
 const express = require("express");
 require("./config/db");
