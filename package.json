@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lesly22/du-lernst.git"
+    "url": "git+https://github.com/BorisA3/du_lernst.git"
   },
   "keywords": [
     "node",
@@ -21,9 +21,9 @@
   "author": "Lesly Mariela",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lesly22/du-lernst/issues"
+    "url": "https://github.com/BorisA3/du_lernst/issues"
   },
-  "homepage": "https://github.com/lesly22/du-lernst#readme",
+  "homepage": "https://github.com/BorisA3/du_lernst#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
