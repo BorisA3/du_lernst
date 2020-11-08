@@ -72,7 +72,7 @@ exports.crearCuenta = async (req, res, next) => {
 exports.formularioIniciarSesion = (req, res, next) => {
   console.log(req.flash());
   res.render("iniciarSesion", {
-    layout: "auth",
+    // layout: "auth",
     typePage: "login-page",
     signButtonValue: "/crear-cuenta",
     signButtonText: "Regístrate",
