@@ -1,33 +1,60 @@
-<div class="wrapper">
-  <div class="page-header" style="background-image: url('https://source.unsplash.com/ueZXMrZFFKQ/2400x1596');">
-    <div class="filter"></div>
-    <div class="container">
-      {{!-- Mensajes para el usuario --}}
-      {{> showMessages messages}}
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-6 ml-auto mr-auto">
-          <div class="card card-register">
-            <h3 class="card-title" style="font-weight: bold;">Bienvenido</h3>
-            {{!-- Formulario de registro --}}
-            <form class="register-form" method="POST" action="/iniciar-sesion">
-              <label for="email">Correo electrónico</label>
-              <input type="text" class="form-control" placeholder="john@cashize.com" name="email" required>
-              <label for="password">Contraseña</label>
-              <input type="password" class="form-control" placeholder="*******" name="password" required>
-              <button class="btn btn-block btn-round">Iniciar sesión</button>
-            </form>
-            <div class="forgot">
-              <a href="/olvide-password" class="btn btn-link btn-danger">¿Olvidaste tu contraseña?</a>
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neumorphic Login - Free Bulma template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/neumorphic-login.css">
+  </head>
+
+
+  <body>
+    
+    
+    <div class="hero is-fullheight content=center " style="margin: -10% 0 0 38%;" >
+      <div class="hero-body has-text-centered" >
+        <div class="login">
+         <img src="https://i.postimg.cc/SstF0wQS/dulernst-fw.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+            <br>
+            <br>
+          <form class="register-form" method="POST" action="/iniciar-sesion">
+            <div class="field">
+              <div class="control">
+                <input class="input is-medium is-rounded" type="email" name="email" placeholder="hello@example.com" autocomplete="username" required />
+              </div>
             </div>
-            <div class="login">
-              <p>¿No tienes una cuenta? <a href="/crear-cuenta"><strong>¡Regístrate!</strong></a></p>
+            <div class="field">
+              <div class="control">
+                <input class="input is-medium is-rounded" type="password"  name="password" autocomplete="current-password" placeholder="*******" required />
+              </div>
+               {{!-- Mensajes para el usuario --}}
+              {{> showMessages messages}}
             </div>
-          </div>
+            <br />
+           
+            <button class="button is-block is-info is-large is-fullwidth">Login <i class="fas fa-sign-in-alt" aria-hidden="true"></i></button>
+          </form>
+          <br>
+          <nav class="level">
+            <div class="level-item has-text-centered">
+              <div>
+                <a href="/olvide-password">Forgot Password?</a>
+              </div>
+            </div>
+            <div class="level-item has-text-centered">
+              <div>
+                <a href="/crear-cuenta">Create an Account</a>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
-      <div class="demo-footer text-center">
-        <h6>&copy; {{year}}, UNICAH <i class="fa fa-heart heart"></i> Seminario de Software</h6>
-      </div>
     </div>
-  </div>
-</div>
+    
+  </body>
+
+</html>
