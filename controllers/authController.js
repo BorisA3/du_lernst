@@ -35,7 +35,7 @@ exports.cerrarSesion = (req, res, next) => {
 exports.formularioRestablecerPassword = (req, res, next) => {
   // console.log(res.locals.messages.messages[0].messages[0].message);
   res.render("restablecerPassword", {
-    layout: "auth",
+    // layout: "auth",
     typePage: "register-page",
     signButtonValue: "/iniciar-sesion",
     signButtonText: "Iniciar sesión",
@@ -139,7 +139,7 @@ exports.formularioNuevoPassword = async (req, res, next) => {
 
     // Mostrar el formulario de nuevo password
     res.render("nuevoPassword", {
-      layout: "auth",
+      // layout: "auth",
       typePage: "register-page",
       signButtonValue: "/iniciar-sesion",
       signButtonText: "Iniciar sesión",
