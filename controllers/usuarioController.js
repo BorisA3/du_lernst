@@ -8,7 +8,7 @@ const year = new Date().getFullYear();
 // Cargar el formulario de la creación de una cuenta de usuario
 exports.formularioCrearCuenta = (req, res, next) => {
   res.render("registrarse", {
-    layout: "auth",
+    layout: "main",
     typePage: "register-page",
     signButtonValue: "/iniciar-sesion",
     signButtonText: "Iniciar sesión",
@@ -72,7 +72,7 @@ exports.crearCuenta = async (req, res, next) => {
 exports.formularioIniciarSesion = (req, res, next) => {
   console.log(req.flash());
   res.render("iniciarSesion", {
-    layout: "auth",
+    // layout: "auth",
     typePage: "login-page",
     signButtonValue: "/crear-cuenta",
     signButtonText: "Regístrate",

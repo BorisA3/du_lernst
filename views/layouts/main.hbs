@@ -39,35 +39,38 @@
 
   <div id="navbarExampleTransparentExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item" href="https://bulma.io/">
+      <a class="navbar-item" href="/">
         Home
       </a>
+        <a class="navbar-item" href="/">
+          Explorar Cursos
+        </a>
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
-          Docs
+        <a class="navbar-link" href="#">
+          Categorias
         </a>
         <div class="navbar-dropdown is-boxed">
           <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
-            Overview
+            Ejemplo 1
           </a>
           <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
-            Modifiers
+            Ejemplo 2
           </a>
           <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
-            Columns
+            Ejemplo 3
           </a>
           <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
-            Layout
+            Ejemplo 4
           </a>
           <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
-            Form
+            Ejemplo 5
           </a>
-          <hr class="navbar-divider">
           <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
-            Elements
+            Ejemplo 6
           </a>
-          <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
-            Components
+          {{!-- <hr class="navbar-divider"> --}}
+          <a class="navbar-item" href="https://bulma.io/documentation/components/breadcrumb/">
+            Ejemplo 7
           </a>
         </div>
       </div>
@@ -87,11 +90,21 @@
             </a>
           </p>
           <p class="control">
-            <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.9.1/bulma-0.9.1.zip">
+            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" href="/iniciar-sesion">
               <span class="icon">
-                <i class="fas fa-download"></i>
+                <i class="fas fa-sign-in-alt"></i>
               </span>
-              <span>Download</span>
+              <span>
+                Iniciar Sesion
+              </span>
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-primary" href="/crear-cuenta">
+              <span class="icon">
+                <i class="fas fa-user-plus"></i>
+              </span>
+              <span>Registrarse</span>
             </a>
           </p>
         </div>
@@ -99,6 +112,7 @@
     </div>
   </div>
 </nav>
+
   </header>
 
   {{!-- Contenido principal --}}
@@ -132,6 +146,13 @@
 
 <style>
   body{
-    background-color: #E4FDFF;
+    background-image: url("https://userscontent2.emaze.com/images/4b20e1bb-e309-41a4-b4e9-e6f7e55d7b97/635462281391468165_Fondoabstractoconcolorespastelesendiagonal-344435.jpg");
+    background-size: cover;
   }
+  .navbar {
+    background-color: transparent;
+}
+.footer {
+    background-color: transparent;
+}
 </style>
