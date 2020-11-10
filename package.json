@@ -35,6 +35,7 @@
     "express-handlebars": "^5.2.0",
     "express-session": "^1.17.1",
     "express-validator": "^6.6.1",
+    "mongodb": "^3.6.3",
     "mongoose": "^5.10.13",
     "nodemailer": "^6.4.15",
     "nodemailer-express-handlebars": "^4.0.0",
